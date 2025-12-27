@@ -130,6 +130,7 @@ rules:
     - 'DOMAIN,accounts.google.com,🔰 节点选择'
     - 'DOMAIN,daily-cloudcode-pa.sandbox.googleapis.com,🔰 节点选择'
     - 'PROCESS-NAME,Antigravity.exe,🔰 节点选择'
+    - 'PROCESS-NAME,language_server_windows_x64.exe,🔰 节点选择'
 ```
 
 ### 3.2 Proxifier 配置
