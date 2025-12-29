@@ -31,7 +31,9 @@ lazyload:
   enable: true
 
 # 首页顶部图片/视频背景 - 使用深邃星空渐变
-index_img: "linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%)"
+# index_img: "linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%)"
+# 首页顶部图片/视频背景 - 使用bg.png深邃科技风
+index_img: /images/bg.png
 
 # 背景图片/颜色配置
 background:
@@ -294,6 +296,7 @@ readmode:
 # 注入配置 (Inject) - 用于自定义 HTML/CSS/JS
 inject:
   head:
+    # - "<link rel='stylesheet' href='/css/custom.css'>"
     - "<style> .top-announcement { background: linear-gradient(90deg, #ff9a9e 0%, #fecfef 99%, #fecfef 100%); color: #333; text-align: center; padding: 10px 0; font-size: 14px; font-weight: bold; width: 100%; border-bottom: 1px solid #eee; } </style>"
   bottom:
     - "<script> document.addEventListener('DOMContentLoaded', function() { var announcement = document.createElement('div'); announcement.className = 'top-announcement'; announcement.innerHTML = '🚀 欢迎来到 CodeVerse 技术宇宙！'; document.body.insertBefore(announcement, document.body.firstChild); }); </script>"
