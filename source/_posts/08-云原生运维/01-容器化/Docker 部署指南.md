@@ -10,7 +10,7 @@ tags:
   - Redis
   - Git
 description: 详细介绍Docker容器化部署完整指南的技术实现、配置方法、最佳实践等内容。
-author: vilas
+author: lucas
 abbrlink: 4beba163
 date: 2025-12-09 12:46:41
 ---

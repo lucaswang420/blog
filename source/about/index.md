@@ -61,8 +61,8 @@ layout: "about"
 
 如果你对我的文章有疑问，或者想要交流技术问题，欢迎通过以下方式联系我：
 
-- **GitHub**: [VilasWang](https://github.com/VilasWang)
-- **Email**: vilaswang@foxmail.com
+- **GitHub**: [lucaswang420](https://github.com/lucaswang420/)
+- **Email**: lucaswang420@foxmail.com
 
 ### 🤝 友链申请
 

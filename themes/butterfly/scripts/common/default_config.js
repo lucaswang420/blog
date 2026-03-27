@@ -149,7 +149,7 @@ module.exports = {
         enable: true,
         icon: 'fab fa-github',
         text: 'Follow Me',
-        link: 'https://github.com/VilasWang'
+        link: 'https://github.com/lucaswang420/'
       }
     },
     card_announcement: {

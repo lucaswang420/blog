@@ -7,13 +7,13 @@ title: CodeVerse | 技术宇宙
 subtitle: '探索技术的无限可能'
 description: 'CodeVerse | 技术宇宙 - 专注于 C++、Qt、系统架构与性能优化的技术知识库。'
 keywords: 'C++, Qt, 架构设计, 性能优化, CodeVerse, 技术博客'
-author: vilas
+author: lucas
 language: zh-CN
 timezone: Asia/Shanghai
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: https://VilasWang.github.io
+url: https://lucaswang420.github.io
 permalink: posts/:abbrlink/  # 使用abbrlink生成永久链接
 permalink_defaults:
 pretty_urls:
@@ -140,7 +140,7 @@ theme: butterfly
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: git
-  repo: git@github.com:VilasWang/VilasWang.github.io.git
+  repo: git@github.com:lucaswang420/lucaswang420.github.io.git
   branch: main
   message: "Site updated: {{ now('YYYY-MM-DD HH:mm:ss') }}"
 

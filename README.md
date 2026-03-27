@@ -120,7 +120,7 @@ graph TD
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/VilasWang/VilasWang.github.io.git blog
+   git clone https://github.com/lucaswang420/blog.git blog
    cd blog
    ```
 
@@ -177,7 +177,7 @@ Each blog post requires YAML front matter:
 ---
 title: "Article Title"
 date: 2025-12-17 16:30:00
-author: "vilas"
+author: "lucas"
 tags: [Tag1, Tag2, Tag3]
 categories: [MainCategory, SubCategory]
 description: "Brief description of the article content"
@@ -212,9 +212,9 @@ Key settings in the main Hexo configuration:
 ```yaml
 # Site Information
 title: CodeVerse | 技术宇宙
-author: vilas
+author: lucas
 language: en
-url: https://VilasWang.github.io
+url: https://lucaswang420.github.io
 permalink: posts/:abbrlink/
 
 # Theme
@@ -232,7 +232,7 @@ jsonContent:
 # Deployment
 deploy:
   type: git
-  repo: git@github.com:VilasWang/VilasWang.github.io.git
+  repo: git@github.com:lucaswang420/lucaswang420.github.io.git
   branch: main
 ```
 
@@ -278,7 +278,7 @@ The deployment is configured in `_config.yml`:
 ```yaml
 deploy:
   type: git
-  repo: git@github.com:VilasWang/VilasWang.github.io.git
+  repo: git@github.com:lucaswang420/lucaswang420.github.io.git
   branch: main
   message: "Site updated: {{ now('YYYY-MM-DD HH:mm:ss') }}"
 ```
@@ -329,5 +329,5 @@ git push origin main
 ---
 
 *Last updated: December 2025*
-*Maintainer: vilas*
+*Maintainer: lucas*
 *License: MIT*

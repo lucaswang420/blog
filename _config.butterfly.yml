@@ -3,7 +3,7 @@
 # 网站信息
 site:
   title: CodeVerse | 技术宇宙
-  author: vilas
+  author: lucas
   language: zh-CN
   timezone: Asia/Shanghai
 
@@ -24,7 +24,7 @@ code_theme:
 
 # 社交图标
 social:
-  Github: https://github.com/VilasWang || fab fa-github
+  Github: https://github.com/lucaswang420/ || fab fa-github
 
 # 图片和背景配置
 lazyload:
@@ -175,7 +175,7 @@ comments:
 # Giscus
 # https://giscus.app/
 giscus:
-  repo: VilasWang/VilasWang.github.io # 您的用户名/仓库名 (例如: VilasWang/VilasWang.github.io)
+  repo: lucaswang420/lucaswang420.github.io # 您的用户名/仓库名 (例如: lucaswang420/lucaswang420.github.io)
   repo_id: R_kgDOQkzqvg # 仓库 ID
   category: Announcements
   category_id: DIC_kwDOQkzqvs4Cz99h # 分类 ID

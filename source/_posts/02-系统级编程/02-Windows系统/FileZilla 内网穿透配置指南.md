@@ -6,7 +6,7 @@ categories:
 tags:
   - Windows
 description: 详细介绍使用Filezilla Server和花生壳实现内网穿透的技术实现、配置方法、最佳实践等内容。
-author: vilas
+author: lucas
 abbrlink: 2acf74bd
 date: 2025-12-09 12:59:14
 ---

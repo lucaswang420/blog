@@ -4,7 +4,7 @@ categories:
   - C++核心开发
   - Qt框架
 description: 开发实战指南，包含架构设计、代码实现、测试部署等完整开发流程，提供可复用的技术方案和最佳实践。
-author: Vilas
+author: lucas
 date: '2025-09-21'
 tags:
   - Qt
