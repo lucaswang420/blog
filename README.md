@@ -147,21 +147,30 @@ graph TD
    hexo new "Your Post Title"
    ```
 
-2. **Generate static site**
+2. **Local preview**
+   ```bash
+   npm run server
+   # or
+   hexo server
+   ```
+
+   Visit `http://localhost:4000` to preview changes
+
+3. **Generate static site**
    ```bash
    npm run build
    # or
    hexo generate
    ```
 
-3. **Deploy to GitHub Pages**
+4. **Deploy to GitHub Pages**
    ```bash
    npm run deploy
    # or
    hexo deploy
    ```
 
-4. **Clean and rebuild**
+5. **Clean and rebuild**
    ```bash
    npm run clean
    npm run build

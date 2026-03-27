@@ -106,7 +106,7 @@ Antigravity 是一款基于云原生的开发平台，采用 OAuth 2.0 标准进
 |------|----------|------|
 | **Clash** | v1.18.0+ | SOCKS5 代理服务 |
 | **Proxifier** | v4.0+ | 进程级代理管理 |
-| **Edge 浏览器** | v118.0+ | OAuth 认证浏览器 |
+| **Edge/chrome 浏览器** | v118.0+ | OAuth 认证浏览器 |
 | **Antigravity** | Latest | 目标应用程序 |
 
 ---
@@ -119,19 +119,7 @@ Antigravity 是一款基于云原生的开发平台，采用 OAuth 2.0 标准进
 确保 Clash 客户端连接到美国地区节点，避免使用香港、日本等亚洲节点。
 
 #### 3.1.2 规则配置
-更新 Clash 配置文件，添加 Antigravity 相关规则：
-
-```yaml
-# Google Auth & Antigravity 必须走代理
-rules:
-    - 'DOMAIN-SUFFIX,googleapis.com,🔰 节点选择'
-    - 'DOMAIN-SUFFIX,sandbox.googleapis.com,🔰 节点选择'
-    - 'DOMAIN,oauth2.googleapis.com,🔰 节点选择'
-    - 'DOMAIN,accounts.google.com,🔰 节点选择'
-    - 'DOMAIN,daily-cloudcode-pa.sandbox.googleapis.com,🔰 节点选择'
-    - 'PROCESS-NAME,Antigravity.exe,🔰 节点选择'
-    - 'PROCESS-NAME,language_server_windows_x64.exe,🔰 节点选择'
-```
+更新 Clash 配置文件，选择规则模式，不要走全局模式：
 
 ### 3.2 Proxifier 配置
 
@@ -147,20 +135,20 @@ rules:
 #### 3.2.2 创建代理规则
 
 **规则1：Edge 浏览器直连（最高优先级）**
-- **Rule name**: Edge Direct
+- **Rule name**: browser Direct
 - **Applications**: msedge.exe
 - **Action**: Direct
 - **Priority**: Highest
 
 **规则2：Clash 进程直连（避免代理循环）**
 - **Rule name**: Clash Processes Direct
-- **Applications**: clash_*.exe
+- **Applications**: clash_*.exe,chrome.exe (程序实际路径)
 - **Action**: Direct
 - **Priority**: High
 
 **规则3：Antigravity 应用走代理**
 - **Rule name**: Antigravity via Clash
-- **Applications**: Antigravity.exe, language_server_windows_x64.exe
+- **Applications**: Antigravity.exe, language_server_windows_x64.exe (程序实际路径)
 - **Action**: 127.0.0.1:7890
 - **Priority**: Normal
 
@@ -188,8 +176,8 @@ set NO_PROXY=""
 确保防火墙允许以下连接：
 - Clash.exe (TCP:7890 入站)
 - Proxifier.exe (TCP 动态端口 出站)
-- msedge.exe (TCP/UDP:80/443 出站)
-- Antigravity.exe (TCP/UDP 动态端口 出站)
+- msedge.exe,chrome.exe (TCP/UDP:80/443 出站)
+- Antigravity.exe,language_server_windows_x64.exe (TCP/UDP 动态端口 出站)
 
 ---
 
