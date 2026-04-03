@@ -108,7 +108,9 @@ Theme configuration in [`_config.butterfly.yml`](_config.butterfly.yml):
 - Giscus comments system
 
 Theme scripts in [`themes/butterfly/scripts/`](themes/butterfly/scripts/):
-- `filters/random_cover.js` - Random cover image generator for posts
+
+- `filters/random_cover.js` - Random cover image generator for posts (prevents duplicate covers, uses 3-item history)
+- `filters/post_lazyload.js` - Lazy loading for post images and content
 - `common/default_config.js` - Default theme configuration
 
 ### Auto-Post System
@@ -141,9 +143,12 @@ date: 2025-12-04 22:47:58
 ```
 
 Important fields:
-- `abbrlink`: Auto-generated unique identifier (don't manually edit)
-- `categories`: Use hierarchical format for proper organization
+
+- `abbrlink`: Auto-generated unique identifier using CRC32 algorithm (don't manually edit; hex format, e.g., `7a1e3650`)
+- `categories`: Use hierarchical format for proper organization (e.g., `MainCategory` and `SubCategory`)
 - `description`: Used for SEO and post previews
+
+**Note**: Category numbering (01-, 02-, 03-, 05-, etc.) is intentional and supports custom ordering. Gaps are reserved for future content categories.
 
 ## Configuration Files
 
@@ -175,9 +180,12 @@ The blog deploys to GitHub Pages at `https://lucaswang420.github.io`
 - Configured in theme's `local_search` section
 
 ### Image Assets
+
 - Static images in [`source/images/`](source/images)
 - Blog-specific images can use `post_asset_folder: false` (current setting)
-- Cover images configured in theme's `post_img` section
+- Cover images configured in theme's `post_img` section with randomization enabled
+
+**Cover Image System**: Posts without explicit cover images automatically receive random covers from [`_config.butterfly.yml`](_config.butterfly.yml) (randomized with 3-item history to prevent duplicates). Manual covers can be set in front matter using `cover:` field.
 
 ### Auto-Post Development
 See [`auto-post/DEVELOPMENT.md`](auto-post/DEVELOPMENT.md) for:
