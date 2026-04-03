@@ -1,5 +1,5 @@
 ---
-title: Windows 环境下配置 GitHub MCP 服务器完整指南
+title: Gemini CLI Windows 环境下配置 GitHub MCP 服务器指南
 categories:
   - 开发工具
 tags:
@@ -9,7 +9,7 @@ abbrlink: windows-github-mcp
 date: 2025-12-18 09:09:23
 ---
 
-# Windows 环境下配置 GitHub MCP 服务器完整指南
+# Gemini CLI Windows 环境下配置 GitHub MCP 服务器指南
 > **文档创建时间**: 2025-12-18
 > **最后更新**: 2025-12-18
 > **标签**: `github`, `mcp`, `windows`, `powershell`, `gemini-cli`, `ai-tools`

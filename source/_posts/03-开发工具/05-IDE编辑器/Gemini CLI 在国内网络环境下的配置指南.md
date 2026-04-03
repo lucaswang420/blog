@@ -1,5 +1,5 @@
 ---
-title: Gemini CLI 在国内网络环境下的完整配置指南
+title: Gemini CLI 在国内网络环境下的配置指南
 categories:
   - 开发工具
 tags:
@@ -9,7 +9,7 @@ abbrlink: gemini-cli-proxy
 date: 2025-12-18 09:09:23
 ---
 
-# Gemini CLI 在国内网络环境下的完整配置指南
+# Gemini CLI 在国内网络环境下的配置指南
 > **文档创建时间**: 2025-12-18
 > **最后更新**: 2025-12-18
 > **标签**: `gemini-cli`, `proxy`, `vpn`, `network`, `ai-tools`, `跨域访问`
